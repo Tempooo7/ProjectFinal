@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CssFile/searchPage.css" />
+    <link
+      rel="icon"
+      href="Pictures/Figma_OvkibuOt6y 2.svg"
+      type="image/x-icon"
+    />
+    <title>Libyan Career - البحث</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="landingPage.html">
+        <img class="logo" src="Pictures/Figma_OvkibuOt6y 2.svg" alt="logo" />
+      </a>
+
+      <nav class="nav-bar">
+        <ul class="nav-items">
+          <li><a href="landingPage.html">الرئيسية</a></li>
+          <li><a href="landingPage.html">نبذة عن</a></li>
+          <li><a href="landingPage.html">كيفية العمل</a></li>
+          <li><a href="landingPage.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <div class="button-group">
+        <a href="signIn.html">
+          <button class="sign-inButton">تسجيل الدخول</button>
+        </a>
+        <a href="index.html">
+          <button class="register-button">تسجيل</button>
+        </a>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="container">
+        <h1>ابحث عن الخبراء المناسبين</h1>
+        <h2>اكتشف المواهب المتميزة في مجالك</h2>
+        <div class="serach-group">
+          <div class="input-wrapper">
+            <img class="location-icon" src="Pictures/location.svg" alt="icon" />
+            <input type="text" placeholder="المكان" />
+          </div>
+
+          <div class="input-wrapper">
+            <img class="search-icon" src="Pictures/Search.svg" alt="icon" />
+            <input type="text" placeholder="ابحث" />
+          </div>
+          <a href="#result-section">
+            <button class="search-button">البحث</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="filter-section">
+      <h1>تصفح الخبراء حسب الفئة</h1>
+      <h3>اختر من بين مجموعة واسعة من التخصصات</h3>
+      <div class="filter-container">
+        <div class="filter" data-category="all">
+          <img src="Pictures/all.svg" alt="" />
+          <h4>عرض الكل</h4>
+          <p>كل التخصصات</p>
+        </div>
+        <div class="filter" data-category="health">
+          <img src="Pictures/heart.svg" alt="" />
+          <h4>الصحة والطب</h4>
+          <p>6 خبير متاح</p>
+        </div>
+        <div class="filter" data-category="it">
+          <img src="Pictures/code.svg" alt="" />
+          <h4>تكنولوجيا المعلومات</h4>
+          <p>6 خبير متاح</p>
+        </div>
+        <div class="filter" data-category="education">
+          <img src="Pictures/book.svg" alt="" />
+          <h4>التعليم والتدريب</h4>
+          <p>6 خبير متاح</p>
+        </div>
+        <div class="filter" data-category="design">
+          <img src="Pictures/art.svg" alt="" />
+          <h4>التصميم و الابداع</h4>
+          <p>6 خبير متاح</p>
+        </div>
+      </div>
+      <div class="filter-container2">
+        <div class="filter" data-category="translation">
+          <img src="Pictures/translate.svg" alt="" />
+          <h4>الترجمة واللغات</h4>
+          <p>6 خبير متاح</p>
+        </div>
+        <div class="filter" data-category="engineering">
+          <img src="Pictures/eng2.svg" alt="" />
+          <h4>الخدمات الهندسية</h4>
+          <p>6 خبير متاح</p>
+        </div>
+        <div class="filter" data-category="finance">
+          <img src="Pictures/calc.svg" alt="" />
+          <h4>المحاسبة و المالية</h4>
+          <p>6 خبير متاح</p>
+        </div>
+        <div class="filter" data-category="marketing">
+          <img src="Pictures/dig.svg" alt="" />
+          <h4>التسويق الرقمي</h4>
+          <p>6 خبير متاح</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section" id="result-section">
+      <div class="filter-control">
+        <img class="right-filter" src="Pictures/rightfilter.svg" alt="" />
+        <h1>كل التخصصات</h1>
+        <img class="left-filter" src="Pictures/leftfilter.svg" alt="" />
+      </div>
+
+      <hr />
+      <h1>نتائج البحث</h1>
+      <div class="result-container">
+        <div
+          class="result-box"
+          data-category="health"
+          data-subcategory="cardiology"
+        >
+          <div class="right-col">
+            <img src="Pictures/prof.svg" alt="" />
+          </div>
+          <div class="left-col">
+            <h2>د.احمد محمد</h2>
+            <span class="title">استشاري طب القلب</span>
+            <div class="inner-leftcolumn">
+              <img src="Pictures/starr.svg" alt="" />
+              <p>4.8</p>
+              <span>(70 تقييم)</span>
+              <img src="Pictures/loc.svg" alt="" />
+              <span>طرابلس</span>
+            </div>
+            <span> الخبرة: 10+ سنة</span>
+            <div class="inner-leftcolumn2">
+              <div class="mini-container"><p>جراحة القلب</p></div>
+              <div class="mini-container"><p>القسطرة</p></div>
+              <div class="mini-container"><p>تخطيط القلب</p></div>
+            </div>
+            <a href="profilePage.html">
+              <button>عرض الملف الشخصي</button>
+            </a>
+          </div>
+        </div>
+        <div class="result-box" data-category="finance">
+          <div class="right-col">
+            <img src="Pictures/acouter.svg" alt="" />
+          </div>
+          <div class="left-col">
+            <h2>صالح</h2>
+            <span class="title">محاسب</span>
+            <div class="inner-leftcolumn">
+              <img src="Pictures/starr.svg" alt="" />
+              <p>4.9</p>
+              <span>(52 تقييم)</span>
+              <img src="Pictures/loc.svg" alt="" />
+              <span>بنغازي</span>
+            </div>
+            <span>الخبرة: 8 سنوات</span>
+            <div class="inner-leftcolumn2">
+              <div class="mini-container"><p>ادارة الحسابات</p></div>
+              <div class="mini-container"><p>محاسبة مالية</p></div>
+            </div>
+            <a href="profilePage.html">
+              <button>عرض الملف الشخصي</button>
+            </a>
+          </div>
+        </div>
+        <div class="result-box" data-category="it">
+          <div class="right-col">
+            <img src="Pictures/Ellipse 3.svg" alt="" />
+          </div>
+          <div class="left-col">
+            <h2>تامر محمد</h2>
+            <span class="title">مطور مواقع</span>
+            <div class="inner-leftcolumn">
+              <img src="Pictures/starr.svg" alt="" />
+              <p>4.8</p>
+              <span>(70 تقييم)</span>
+              <img src="Pictures/loc.svg" alt="" />
+              <span>طرابلس</span>
+            </div>
+            <span> الخبرة: 30+ سنة</span>
+            <div class="inner-leftcolumn2">
+              <div class="mini-container"><p>html</p></div>
+              <div class="mini-container"><p>css</p></div>
+              <div class="mini-container"><p>js</p></div>
+            </div>
+            <a href="profilePage.html">
+              <button>عرض الملف الشخصي</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recruit-section">
+      <div class="recruit-container">
+        <h1>هل أنت خبير في مجالك؟</h1>
+        <p>انضم إلى منصة Libyan Career وابدأ في تقديم خدماتك للعملاء</p>
+        <div class="button-group">
+          <a href="index.html"
+            ><button class="join-button">انظم كخبير</button>
+          </a>
+          <a href="landingPage.html">
+            <button class="more-button">التعرف علي المزيد</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="mainFooter-container">
+        <div class="footer-container">
+          <img src="Pictures/Figma_OvkibuOt6y 2.svg" alt="" />
+          <p>خدماتك، عملك، مستقبلك</p>
+        </div>
+        <div class="footer-container">
+          <h5>الخدمات</h5>
+          <ul>
+            <li><a href="index.html">انشاء حساب فريلانسر</a></li>
+            <li><a href="searchPage.html">تصفح الخبراء</a></li>
+            <li><a href="">إضافة خدمة جديدة</a></li>
+          </ul>
+        </div>
+        <div class="footer-container">
+          <h5>تصفح</h5>
+          <ul>
+            <li><a href="landingPage.html">جميع الخدمات</a></li>
+            <li><a href="landingPage.html">الفئات</a></li>
+            <li><a href="landingPage.html">ابرز الخبراء</a></li>
+          </ul>
+        </div>
+        <div class="footer-container">
+          <h5>الشركة</h5>
+          <ul>
+            <li><a href="landingPage.html">من نحن</a></li>
+            <li><a href="landingPage.html">كيف تعمل Libyan Carreer</a></li>
+            <li><a href="">الاسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div class="button-group3">
+          <a href="landingPage.html">
+            <button class="email-button">
+              تواصل معنا
+              <img src="Pictures/ic_baseline-email.svg" alt="icon" />
+            </button>
+          </a>
+          <a href="landingPage.html">
+            <button class="call-button">
+              تواصل معنا
+              <img src="Pictures/material-symbols_call.svg" alt="icon" />
+            </button>
+          </a>
+        </div>
+        <div class="footer-row">
+          <a href="www.facebook.com" target="_blank">
+            <img src="Pictures/ic_baseline-facebook.svg" alt="icon" />
+          </a>
+          <a href="https://x.com/Tamer_025" target="_blank">
+            <img src="Pictures/prime_twitter.svg" alt="icon" />
+          </a>
+          <a href="https://www.instagram.com/tempo_707/" target="_blank">
+            <img src="Pictures/insta.svg" alt="icon" />
+          </a>
+          <p>Privacy Policy</p>
+          <p>Terms and conditions</p>
+          <span>2025 All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script2.js" defer></script>
+  </body>
+</html>
